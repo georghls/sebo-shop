@@ -1,0 +1,72 @@
+:root {
+  --verde: #1F3A2E;
+  --verde-escuro: #172C22;
+  --papel: #F2E9D8;
+  --papel-claro: #F8F2E4;
+  --vinho: #7A2E2E;
+  --vinho-claro: #8F3B3B;
+  --latao: #B08D57;
+  --tinta: #3D3229;
+  --texto-claro: #E8E1D0;
+  --texto-claro-fade: #C9C0A9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--verde);
+  color: var(--texto-claro);
+  font-family: 'Source Serif 4', serif;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+/* Textura sutil de papel/linho no fundo escuro */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: repeating-linear-gradient(0deg, rgba(255,255,255,0.015) 0px, rgba(255,255,255,0.015) 1px, transparent 1px, transparent 3px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.eyebrow {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--latao);
+}
+
+h1, h2, h3 {
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--latao);
+  outline-offset: 3px;
+}
