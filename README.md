@@ -2,8 +2,6 @@
 
 Uma landing page moderna, minimalista e com forte personalidade vintage para o **Alfarrábio**, um e-commerce especializado na compra, venda e troca de livros usados, raridades e edições colecionáveis.
 
-![Alfarrábio Banner](./public/assets/grande-sertao-veredas.jpg)
-
 ---
 
 ## 🏛️ Sobre o Projeto
