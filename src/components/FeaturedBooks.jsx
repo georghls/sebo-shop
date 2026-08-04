@@ -9,7 +9,7 @@ export default function FeaturedBooks() {
       author: "João Guimarães Rosa",
       price: "R$ 38",
       state: "Bom estado",
-      cover: "/assets/grande-sertao-veredas.jpg"
+      cover: `${import.meta.env.BASE_URL}assets/grande-sertao-veredas.jpg`
     },
     {
       code: "COD. PO-0847 · POESIA",
@@ -17,7 +17,7 @@ export default function FeaturedBooks() {
       author: "Carlos Drummond de Andrade",
       price: "R$ 29",
       state: "Marcas de leitura",
-      cover: "/assets/a-rosa-do-povo.jpg"
+      cover: `${import.meta.env.BASE_URL}assets/a-rosa-do-povo.jpg`
     },
     {
       code: "COD. RA-0112 · RARIDADE",
@@ -25,7 +25,7 @@ export default function FeaturedBooks() {
       author: "Machado de Assis",
       price: "R$ 210",
       state: "Colecionador",
-      cover: "/assets/dom-casmurro.jpg"
+      cover: `${import.meta.env.BASE_URL}assets/dom-casmurro.jpg`
     },
     {
       code: "COD. FC-1560 · FICÇÃO",
@@ -33,7 +33,7 @@ export default function FeaturedBooks() {
       author: "Stanisław Lem",
       price: "R$ 32",
       state: "Ótimo estado",
-      cover: "/assets/solaris.jpg"
+      cover: `${import.meta.env.BASE_URL}assets/solaris.jpg`
     }
   ];
 
